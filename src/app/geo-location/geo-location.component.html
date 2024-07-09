@@ -1,0 +1,10 @@
+<div *ngIf="latitude && longitude; else errorTemplate">
+  <h2>Your Location</h2>
+  <p>Latitude: {{ latitude }}</p>
+  <p>Longitude: {{ longitude }}</p>
+</div>
+
+<ng-template #errorTemplate>
+  <h2>Error</h2>
+  <p>{{ error }}</p>
+</ng-template>
